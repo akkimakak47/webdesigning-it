@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            background-color: lightgray;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        #rageshri-header
+        {
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            background-color: white;
+
+        }
+        .logo
+        {
+        width: 20%;
+        height: auto;
+        padding: 15px;
+        display: inline-block;
+        }
+        .search-box
+        {
+            width: 50%;
+            height: auto;
+            padding: 15px;
+            display: inline-block;
+
+        }
+        .search-box input 
+        {
+            width: 90%;
+            height: auto;
+            padding: 10px;
+        }
+        .search-box input::placeholder
+        {
+            color: red !important;
+            font-size: 17px;
+        }
+        .social-media
+        {
+            width: 20%;
+            height: auto;
+            padding: 15px;
+            display: inline-block;
+            font-size: 25px !important;
+
+        }
+        .font-style 
+        {
+            font-size: 20px;
+            font-family: cursive;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        #rageshri-navbar
+        {
+            width: 100%;
+            height: auto;
+            background-color: black;
+
+        }
+        .call-us 
+        {
+          width: 20%;
+          height: auto;
+          display: inline-block;
+          color: white;
+          margin-left: 5%;
+          
+        }
+        .nav 
+        {
+            width: 60%;
+            height: auto;
+            display: inline-block;
+
+        }
+        .nav ul li 
+        {
+            padding: 2px 12px;
+            display: inline-block;
+        }
+        .nav a 
+        {
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+        }
+
+        #rageshri-banner
+        {
+            width: 90%;
+            height: 350px;
+            margin: auto;
+            margin-left: 5%;
+            margin-top: 1%;
+        }
+
+        .slider img 
+        {
+            width: 100%;
+            height: 350px;
+        }
+        #rageshri-content
+        {
+            width: 90%;
+            height: auto;
+            margin: 0;
+            margin-left: 5%;
+            margin-top: 3%;
+        }
+        #rageshri-content h1 
+        {
+            text-align: center !important;
+            font-size: 48px !important;
+        }
+        #rageshri-content hr 
+        {
+            width: 30%;
+            border: solid 2px black;
+        }
+
+        .our-services 
+        {
+            width: 32%;
+            height: 380px;
+            background-color: black;
+            border-radius: 50%;
+            margin: 5px;
+            margin-top: 5%;
+            display: inline-block;
+
+        }
+        .our-services img 
+        {
+            width: 100%;
+            height: 380px;
+            border-radius: 50%;
+            border: solid 3px;
+        }
+        #rageshri-footer 
+        {
+           width: 100%;
+           height: auto;
+           padding: 20px;
+           background-color: black;
+           color: white;
+           margin-top: 5%;
+        }
+
+        .footer
+        {
+            width: 100%;
+            height: auto;
+            padding: 5px;
+        } 
+
+        .footer1 
+        {
+            width: 30%;
+            height: auto;
+            padding: 5px;
+            display: inline-block;
+        }
+        .footer1 ul li 
+        {
+            display: block;
+            padding: 5px 5px;
+        }
+        .footer1 a 
+        {
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- rageshari header start here -->
+    <section id="rageshri-header">
+        <div class="logo font-style">Flipkart App</div>
+        <div class="search-box font-style">
+            <input type="text" name="search" placeholder="Search anything here...!">
+        </div>
+        <div class="social-media font-style">
+          <span class="fa fa-facebook"></span>
+          <span class="fa fa-twitter"></span>
+          <span class="fa fa-instagram"></span>
+          <span class="fa fa-whatsapp"></span>
+          <span class="fa fa-youtube"></span>
+        </div>
+    </section>
+    <!-- rageshari navbar start here -->
+    <section id="rageshri-navbar">
+        <div class="call-us font-style">
+            <span class="fa fa-phone"></span> (+91)-999-8003879
+        </div>
+        <div class="nav navbar font-style">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Womens</a></li>
+                <li><a href="">Mens</a></li>
+                <li><a href="">Kids</a></li>
+                <li><a href="">Offer</a></li>
+                <li><a href="">Account</a></li>
+                <li><a href="">Contactus</a></li>
+
+            </ul>
+        </div>
+    </section>
+    
+
+    <!-- rageshari slider or banners  -->
+    <section id="rageshri-banner">
+        <div class="slider">
+            <img src="images/banners.jpg" alt="banners" title="our sliders images">
+        </div>
+    </section>
+
+
+    <!-- rageshri content here -->
+
+    <section id="rageshri-content">
+        <h1 class="font-style">Our Services</h1>
+        <hr>
+        <div class="our-services">
+            <img src="images/frontend.png">
+        </div>
+        <div class="our-services">
+            
+            <img src="images/react.png">
+        </div>
+        <div class="our-services">
+            
+            <img src="images/angular.png">
+        </div>
+    </section>
+
+
+    <!-- rageshri footer -->
+    <section id="rageshri-footer">
+        <div class="footer">
+
+            <div class="footer1 font-style">
+                <ul>
+                <li><a href=""><h2>Nav Links</h2></a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Womens</a></li>
+                <li><a href="">Mens</a></li>
+                <li><a href="">Kids</a></li>
+                <li><a href="">Offer</a></li>
+                <li><a href="">Account</a></li>
+                <li><a href="">Contactus</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer1 font-style">
+                <ul>
+                <li><a href=""><h2>Our services</h2></a></li>
+                <li><a href="">24x7 support</a></li>
+                <li><a href="">Return Products</a></li>
+                <li><a href="">Privacy & policy</a></li>
+                <li><a href="">Online Refund</a></li>
+                <li><a href="">Admin Login</a></li>
+                <li><a href="">Account</a></li>
+                <li><a href="">Contactus</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer1 font-style">
+                <ul>
+                <li><a href=""><h2>Our Informations</h2></a></li>
+                <li><a href="">24x7 support</a></li>
+                <li><a href="">Return Products</a></li>
+                <li><a href="">Privacy & policy</a></li>
+                <li><a href="">Online Refund</a></li>
+                <li><a href="">Admin Login</a></li>
+                <li><a href="">Account</a></li>
+                <li><a href="">Contactus</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <p align="center" class="font-style">Copyright@2023 All right reserved certified company</p>
+    </section>
+</body>
+</html>
