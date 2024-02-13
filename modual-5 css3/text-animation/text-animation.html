@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        .parent
+        {
+            width: 70%;
+            height: auto;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            padding: 15px;
+            margin-top: 5%;
+            box-shadow: 2px 4px 4px gray;
+            -webkit-animation-delay: 5s !important;
+            animation-delay: 5s !important;
+            -webkit-animation: alternate 4s zoomInDown;
+            animation: alternate 4s zoomInDown;
+        }
+        .child
+        {
+            width: 50%;
+            height: auto;
+            padding: 10px;
+        }
+        .child img 
+        {
+            width: 100%;
+            height: 300px;
+        }
+        .child h1 
+        {
+            animation:  infinite flash 4s;
+        }
+
+        .child1 
+        {
+            width: 50%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <h1>Book appintment</h1>
+            <p>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos iusto facere in. Quasi, voluptates natus! Distinctio totam fuga accusamus doloribus, minima nisi nulla dolorum sequi soluta dignissimos aliquam, animi iusto.</p>
+            <img src="https://png.pngtree.com/png-clipart/20231005/original/pngtree-regular-checkup-rgb-color-icon-pictogram-thin-cartoon-vector-png-image_12965233.png">
+        </div>
+        <div class="child1">
+            <h1>Book appointment Forms</h1>
+            <form action="">
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
