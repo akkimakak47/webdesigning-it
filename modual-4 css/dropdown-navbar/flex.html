@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Navbar dropdown</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            background-color:lightgray;
+        }
+        #navbar-dropdown
+        {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            background-color: #0735a8;
+            position: sticky;
+            top: 0;
+            z-index: 5;
+        }
+        .navbar
+        {
+            width: 100%;
+            height: auto;
+        }
+        .navbar ul li 
+        {
+            display: inline-block;
+            padding: 0px 25px;
+        }
+        .navbar a 
+        {
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .dropdown
+        {
+            position: relative;
+        }
+        .dropdown-menu
+        {
+            position: absolute;
+            display: none;
+            width: 180px !important;
+            height: auto;
+            background-color: #0735a8;
+            color: white;
+            margin: 0;
+            padding: 20px 15px;
+
+        }
+
+        .dropdown:hover .dropdown-menu
+        {
+            display: block;
+        }
+        .dropdown-menu li 
+        {
+            padding: 15px 15px !important;
+            border-bottom: solid 1px white;
+
+        }
+
+        #content 
+        {
+            width: 90%;
+            height: auto;
+            margin-left: 5%;
+            margin-top: 5%;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+           
+        }
+
+        .leftsidebar
+        {
+            width: 35%;
+            height: 550px;
+            background-color: #0735a8;
+            margin: 5px;
+            margin-top: 3%;
+           
+            
+        }
+
+        
+        .rightsidebar
+        {
+            width: 65%;
+            height: 550px;
+            background-color: aliceblue;
+            margin: 5px;
+            margin-top: 3%;
+        }
+
+        .rightsidebar h1 
+        {
+            width: 50%;
+            height: auto;
+            text-align: center;
+            border-bottom: solid 2px gray;
+            line-height: 0.1em;
+            margin: 10px 0px 20px;
+            margin-top: 5%;
+            margin-left: 25%;
+        }
+        .rightsidebar span
+        {
+         background: aliceblue;
+         padding: 0 10px;
+        }
+        .rightsidebar p 
+        {
+            width: 60%;
+            height: auto;
+            margin: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- navbar dropdown -->
+    <section id="navbar-dropdown">
+        <div class="navbar nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown"><a href="#">Products</a>
+                <!-- nested list for dropdown -->
+                <ul class="dropdown-menu">
+                    <li><a href="#">Kids Items </a></li>
+                    <li><a href="#">Mens Items</a></li>
+                    <li><a href="#">Womens Items</a></li>
+                </ul>
+                
+                </li>
+                <li><a href="#">Our Teams </a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="content">
+
+        <div class="leftsidebar"></div>
+        <div class="rightsidebar">
+            <h1><span>OR</span></h1>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem nobis ut, distinctio vitae sequi rerum iusto error blanditiis illo earum nisi similique veniam aperiam consequatur reiciendis eum sapiente ducimus voluptatibus?</p>
+        </div>
+       
+    
+    </section>
+</body>
+</html>

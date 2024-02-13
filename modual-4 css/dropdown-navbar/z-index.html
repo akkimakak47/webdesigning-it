@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Navbar dropdown</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            background-color:lightgray;
+        }
+        #navbar-dropdown
+        {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            background-color: #0735a8;
+            position: sticky;
+            top: 0;
+            z-index: 5;
+        }
+        .navbar
+        {
+            width: 100%;
+            height: auto;
+        }
+        .navbar ul li 
+        {
+            display: inline-block;
+            padding: 0px 25px;
+        }
+        .navbar a 
+        {
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .dropdown
+        {
+            position: relative;
+        }
+        .dropdown-menu
+        {
+            position: absolute;
+            display: none;
+            width: 180px !important;
+            height: auto;
+            background-color: #0735a8;
+            color: white;
+            margin: 0;
+            padding: 20px 15px;
+
+        }
+
+        .dropdown:hover .dropdown-menu
+        {
+            display: block;
+        }
+        .dropdown-menu li 
+        {
+            padding: 15px 15px !important;
+            border-bottom: solid 1px white;
+
+        }
+
+        #content 
+        {
+            width: 90%;
+            height: auto;
+            margin-left: 5%;
+            margin-top: 5%;
+            position: relative;
+          
+
+        }
+
+        .box1
+        {
+            width: 20%;
+            height: 250px;
+            margin: auto;
+            padding: 25px;
+            font-size: 45px;
+            color: white;
+            background-color: red;
+            position: absolute;
+            margin-left: 25%;  
+            z-index: 3;
+                     
+        }
+        .box2
+        {
+            width: 20%;
+            height: 250px;
+            margin: auto;
+            padding: 25px;
+            font-size: 45px;
+            color: white;
+            background-color: green;
+            position: absolute;
+            margin-left: 32%;
+            margin-top: 5%;  
+            /* z-index: -2;           */
+            z-index: 1;
+        }
+        .box3
+        {
+            width: 20%;
+            height: 250px;
+            margin: auto;
+            padding: 25px;
+            font-size: 45px;
+            color: white;
+            background-color: blue;
+            position: absolute;
+            margin-left: 38%;
+            margin-top: 8%;            
+            /* z-index: -5; */
+            z-index: 3;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- navbar dropdown -->
+    <section id="navbar-dropdown">
+        <div class="navbar nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown"><a href="#">Products</a>
+                <!-- nested list for dropdown -->
+                <ul class="dropdown-menu">
+                    <li><a href="#">Kids Items </a></li>
+                    <li><a href="#">Mens Items</a></li>
+                    <li><a href="#">Womens Items</a></li>
+                </ul>
+                
+                </li>
+                <li><a href="#">Our Teams </a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="content">
+
+        <div class="box1">
+            <span>1</span>
+        </div>
+
+        <div class="box2">
+            <span>2</span>
+        </div>
+
+
+        <div class="box3">
+            <span>3</span>
+        </div>
+    
+    </section>
+</body>
+</html>

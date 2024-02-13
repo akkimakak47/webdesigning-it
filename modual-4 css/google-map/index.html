@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact with us with google map</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0px;
+            padding: 0px;
+            background-color: aliceblue;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        #header 
+        {
+            width: 80%;
+            height: 650px;
+            margin-left: 10%;
+            background: url('images/bg.jpg') no-repeat;
+            background-size: cover;
+            margin-top: 3%;
+            border-radius: 10px 10px 0px 0px;
+            clip-path: polygon(0 57%,0 0,100% 0%,100% 55%,52% 78%);
+        }
+        .block1
+        {
+            width: 28%;
+            height: 300px;
+            background-color: white;
+            border-radius: 10px;
+            float: left;
+            margin: 2px;
+            margin-left: 3%;
+            margin-top: 4%;
+            padding: 5px;
+            clip-path: circle(50%);
+            /* animation: 5s infinite fadeIn; */
+            /* animation: 5s alternate fadeIn; */
+           
+        }
+
+        .block1:hover 
+        {
+            animation: fadeIn 5s infinite;
+            color: blue;
+        }
+        .fa-location-arrow,.fa-map-marker,.fa-phone
+        {
+            font-size: 48px;
+        }
+
+        #content 
+        {
+            width: 80%;
+            height: 500px;
+            background-color: white;
+            margin-left: 10%;
+        }
+
+        .form,.google-map
+        {
+            width: 40%;
+            height: 400px;
+            float: left;
+            margin: 5px;
+            padding: 10px;
+            margin-left: 5%;
+            /* box-shadow: 4px 4px 4px 4px  !important; */
+
+        }
+        .form h1 
+        {
+            font-size: 45px;
+            color: gray;
+            animation: heartBeat 2s infinite;
+        }
+        input[type="text"],textarea
+        {
+            width: 400px;
+            height: auto;
+            padding: 8px;
+            border: none;
+            border-bottom: solid 1px gray;
+
+        }
+        input[type="submit"]
+        {
+
+           width: 420px;
+            height: auto;
+            padding: 12px;
+            border: none;
+           background-color: gray;
+           color: white;
+           margin-top: 3%;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- header section -->
+    <section id="header">
+        <div class="block1">
+        <h1 align="center"><span class="fa fa-location-arrow"></span></h1>
+        <h2 align="center">Find Address</h2>
+        <p align="center">101, Aditya Complex, Jalaram 2 Street Number 2, above Sbi Bank, Near Indira Circle, Jala Ram Nagar, Rajkot, Gujarat 360005</p>    
+
+        </div>
+        <div class="block1">
+            <h1 align="center"><span class="fa fa-map-marker"></span></h1>
+            <h2 align="center">Address</h2>
+            <p align="center">101, Aditya Complex, Jalaram 2 Street Number 2, above Sbi Bank, Near Indira Circle, Jala Ram Nagar, Rajkot, Gujarat 360005</p>    
+        </div>
+        <div class="block1">
+            <h1 align="center"><span class="fa fa-phone"></span></h1>
+            <h2 align="center">Phone</h2>
+            <p align="center">101, Aditya Complex, Jalaram 2 Street Number 2, above Sbi Bank, Near Indira Circle, Jala Ram Nagar, Rajkot, Gujarat 360005</p>    
+        </div>
+    </section>
+    <!-- content section -->
+    <section id="content">
+        <div class="form">
+            <h1>Get in touch with us</h1>
+            <form>
+                <input type="text" name="name" placeholder="Name *" required>
+                <br><br>
+                
+                <input type="text" name="email" placeholder="Email *" required>
+                <br><br>
+                
+                <input type="text" name="name" placeholder="Phone *" required>
+                <br><br>
+                
+                <textarea name="name" placeholder="Message *" required></textarea>
+                <br><br>
+                
+                <input type="submit" name="send" value="Send">
+                
+            </form>
+        </div>
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.6799314943046!2d70.77238027412226!3d22.29011104326695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca248c77c099%3A0xdf5ac10af64ac8ee!2sTOPS%20Technologies!5e0!3m2!1sen!2sin!4v1703664764258!5m2!1sen!2sin" width="90%" height="350" style="border:0; margin-top: 18%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+</body>
+</html>

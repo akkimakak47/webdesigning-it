@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+
+        #header
+        {
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            background-color: white;
+        }
+        .call-us 
+        {
+            width: 20%;
+            height: auto;
+            padding: 10px;
+            font-size: 18px;
+            float: left;
+        }
+        .search-box 
+        {
+            width: 50%;
+            height: auto;
+            padding: 10px;
+            float: left;
+        }
+        .search-box input 
+        {
+            width: 95%;
+            height: auto;
+            padding: 10px;
+        }
+        .social
+        {
+            width: 25%;
+            height: auto;
+            padding: 10px;
+            float: left;
+            font-size: 25px;
+            letter-spacing: 8px;
+        }
+
+        .clearfix 
+        {
+            clear: both;
+        }
+
+        .navbar 
+        {
+            width: 100%;
+            height: auto;
+            background-color: black;
+        }
+        .navbar ul li 
+        {
+            display: inline-block;
+            padding: 18px 25px;
+        }
+        .navbar a 
+        {
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+            font-size: 25px;
+        }
+
+        #content
+        {
+            width: 90%;
+            height: auto;
+            margin: 0;
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+        .leftsidebar 
+        {
+            width: 30%;
+            height: 350px;
+            background-color: antiquewhite;
+            margin: 0px;
+            padding: 25px;
+            /* display: inline-block; */
+            float: left;
+
+        }
+        .leftsidebar ul li 
+        {
+            text-decoration: none;
+            list-style-type: none;
+            padding: 5px 15px;
+        }
+        .leftsidebar a 
+        {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+        .rightsidebar
+        {
+            width: 60%;
+            height: 350px;
+            background-color: cornflowerblue;
+            margin: 0px;
+            padding: 25px;
+            /* display: inline-block; */
+            float: left;
+        }
+
+        .rightsidebar h2 
+        {
+            font-size: 40px;
+            color: wheat;
+            line-height: 0.5em;
+        }
+        .rightsidebar hr
+        {
+            line-height: 0.5em !important;
+            border: solid 2px white;
+            width: 48%;
+        }
+        .rightsidebar input 
+        {
+            width: 320px;
+            height: auto;
+            padding: 15px;
+            border: none;
+            background-color:cornflowerblue;
+            border-bottom: solid 2px;
+        }
+        .rightsidebar input[type="submit"]
+        {
+            width: 355px;
+            height: auto;
+            padding: 15px;
+            border: none;
+            background-color: blue;
+            color: white;
+        }
+        #btn-power
+        {
+            width: auto;
+            height: auto;
+            background-color: red;
+            padding: 8px 35px;
+            color: white;
+        }
+
+        .fa-user-plus,.fa-home
+        {
+            color: orangered;
+        }
+
+        .fa-facebook,.fa-instagram,.fa-linkedin
+        {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            padding: 8px 8px;
+            border-radius: 50%;
+            color: white;
+        }
+
+        .fa-facebook:hover,.fa-instagram:hover,.fa-linkedin:hover
+        {
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            padding: 8px 8px;
+            border-radius: 50%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- header -->
+    <section id="header">
+    <div class="call-us">(+91)-9998003879</div>
+    <div class="search-box"><input type="text" placeholder="search anything here *"></div>
+    <div class="social">
+        <span class="fa fa-facebook"></span>
+        <span class="fa fa-instagram"></span>
+        <span class="fa fa-linkedin"></span>
+    </div>
+    </section> 
+    <div class="clearfix"></div>
+    <!-- navbar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="btn_icons.html"><span class="fa fa-home"></span> Home </a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="kids.html">Kids Items</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="account.html">Account <span class="fa fa-user-plus"></span></a></li>
+            <li><a href="contact.html">Contact</a></li>
+          
+        </ul>
+    </div>
+
+
+    <section id="content">
+    <div class="leftsidebar">
+        <ul>
+            <li><a href="">My Profile <span class="fa fa-users"></span></a></li>
+            <li><a href="">change Password <span class="fa fa-lock"></span></a></li>
+            <li><a href="">Notifications <span class="fa fa-bell"></span></a></li>
+            <li><a href="">Manage Orders <span class="fa fa-truck"></span></a></li>
+            <li><a href="">Delete Account <span class="fa fa-trash"></span></a></li>
+            <li><a href="" id="btn-power">Logout <span class="fa fa-power-off"></span></a></li>
+        </ul>
+    </div>
+    <div class="rightsidebar">
+        <h2>Manage profile Here</h2>
+        <hr align="left">
+        <form>
+            <input type="text" name="name" value="Ridhii" placeholder="Riddhi">
+            <br><br>
+            
+            <input type="text" name="email" value="ridhii@gmail.com" placeholder="Email">
+            <br><br>
+            
+            <input type="text" name="mobile" value="Mobile" placeholder="Mobile">
+            <br><br>
+
+            <input type="submit" name="sub" value="Update" placeholder="Update">
+            <br><br>
+        </form>
+    </div>
+</section>
+</body>
+</html>
