@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='js/jquery.min.js'></script>
+    <script src='js/cycle.min.js'></script>
+    <script>
+
+       
+        $(document).ready(function(){
+            $("#slide img").css({"width":"100%","height":"450px"});
+            $("#slide").cycle("fade,zoom,shuffle,turnLeft");
+        })
+    </script>
+</head>
+<body>
+
+    <div id="slide">
+        <img src="images/1.webp" />
+        <img src="images/2.jpg" />
+        <img src="images/3.webp" />
+    </div>
+    
+</body>
+</html>
