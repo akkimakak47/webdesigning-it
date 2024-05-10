@@ -1,0 +1,43 @@
+:root
+{
+    --warning:yellow;
+    --success:green;
+    --info:lightblue;
+    --secondary:lightgray;
+    --dark:black;
+    --white:white;
+    --primary:blue;
+}
+#content 
+{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+}
+.box1,
+.box4,
+.box7,
+.box10
+{
+    width: 100%;
+    height: auto;
+    color: white;
+    padding: 25px;
+    margin-top: 2%;
+    background-color: var(--success);
+}
+.box2,
+.box3,
+.box5,
+.box6,
+.box8,
+.box9
+{
+    width: 100%;
+    height: auto;
+    color: white;
+    padding: 25px;
+    margin-top: 3%;
+    background-color: var(--primary);
+}
