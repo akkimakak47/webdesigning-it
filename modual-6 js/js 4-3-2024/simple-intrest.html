@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+
+        function display()
+        {
+            var p=document.getElementById("ammount").value;
+            var n=document.getElementById("year").value;
+            var r=document.getElementById("roi").value;
+            
+            var si=(p*n*r)/100;
+            document.getElementById("demo").innerHTML="The Interrest you are paying of ammount is  :"+si;
+
+        }
+
+    </script>
+</head>
+<body>
+    <center>
+        <form>
+            Enter your principle ammount :<input type="text" name="name" id="ammount" placeholder="Enter Ammount *">
+            <br><br>
+            
+            Enter your number of years :<input type="text" name="name" id="year" placeholder="Enter years *">
+            <br><br>
+            
+            Enter your ROI :<input type="text" name="name" id="roi" placeholder="Enter ROI *">
+            <br><br>
+            <button type="button" onclick="display()">Check Name </button>
+        </form>
+    
+        <p id="demo"></p>
+    
+    </center>
+</body>
+</html>

@@ -1,0 +1,137 @@
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: lightgray;
+    
+}
+#calculator-app 
+{
+    width: 100%;
+    height: auto;
+}
+.calc 
+{
+    width: 60%;
+    height: auto;
+    margin: 0;
+    padding: 15px;
+    margin-top: 5%;
+    background-color: white;
+    margin-left: 0%;
+}
+.calc input
+{
+    width: 90%;
+    height: auto;
+    padding: 10px;
+}
+#btn 
+{
+    width: 22.8%;
+    height: auto;
+    background-color: white;
+    color: white;
+    padding: 16px;
+    border: none;
+    color: black;
+    box-shadow: 2px 1px 1px 1px gray;
+}
+
+@media only screen and (max-width:320px)
+{
+    .calc 
+    {
+        width: 80%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        margin-top: 5%;
+        background-color: white;
+        margin-left: 10% !important;
+    }
+    .calc input
+    {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+    #btn 
+    {
+        width: 22.8%;
+        height: auto;
+        background-color: white;
+        color: white;
+        padding: 16px;
+        border: none;
+        color: black;
+        box-shadow: 2px 1px 1px 1px gray;
+    }
+}
+
+@media only screen and  (max-width:553px)
+{
+    .calc 
+    {
+        width: 60%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        margin-top: 5%;
+        background-color: white;
+        margin-left: 20% !important;
+    }
+    .calc input
+    {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+    #btn 
+    {
+        width: 22.8%;
+        height: auto;
+        background-color: white;
+        color: white;
+        padding: 16px;
+        border: none;
+        color: black;
+        box-shadow: 2px 1px 1px 1px gray;
+    }
+
+}
+
+    
+@media only screen and  (max-width:768px)
+{
+    .calc 
+    {
+        width: 60%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        margin-top: 5%;
+        background-color: white;
+        margin-left: 20% !important;
+    }
+    .calc input
+    {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+    #btn 
+    {
+        width: 22.8%;
+        height: auto;
+        background-color: white;
+        color: white;
+        padding: 16px;
+        border: none;
+        color: black;
+        box-shadow: 2px 1px 1px 1px gray;
+    }
+}
+

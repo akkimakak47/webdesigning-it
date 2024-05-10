@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+      function valid()
+      {  
+       if(document.frm.email.value=="")
+       {
+          document.getElementById("error").innerHTML="Please enter email here";
+          document.frm.email.focus();
+          return false;   
+       }
+    }
+    </script>
+    <style>
+        #error
+
+        {
+            color: red;
+            margin-left: 6%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <form name="frm" method="post" action="welcome.html" onsubmit="return valid(this.value)">
+        Enter Email :<input type="text" name="email" id="email" placeholder="Email *">
+        <br>
+        <span id="error"></span>
+        <br>
+        <input type="submit" name="sub" value="submit">
+    </form>
+    </center>
+</body>
+</html>

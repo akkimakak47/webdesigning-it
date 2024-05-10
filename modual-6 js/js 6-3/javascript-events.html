@@ -1,0 +1,77 @@
+
+<script>
+    /* 
+      what is javascript events ?
+         js events are usd to perform some actions there we applied events
+         types of events :
+
+                 a) keyboard events
+                 b) mouse events
+                 c) window events
+                 d) miscellaneous events
+    
+    */
+
+
+   // 1) window events : onload() , onunload()
+   // 2) mouse events : onmouseover() , onclick(), onmousout(), onmouseleave(), onmousdown(),onclick, ondblclick
+   // 3) keyboard events: onkeydown(), onkeyup(),onkeypress()
+   // 4) miscellaneous events : onblur(), onchange, onsubmit()   
+
+//onload()
+//  function display()
+//  {
+//   document.getElementById("demo").style="transition:2s ease all; color:blue; width:50%; height:auto; margin:auto; font-size:20px";
+//  } 
+
+
+// mouse events
+
+// function display1()
+// {
+//     document.getElementById("imgg").src="https://media.istockphoto.com/id/877369086/photo/lion-panthera-leo-10-years-old-isolated-on-white.jpg?s=612x612&w=0&k=20&c=J__Jx_BX_FN7iehO965TJtPFYUl0A-bwFgIYaK32R3Y=";
+// }
+// function display2()
+// {
+//     document.getElementById("imgg").src="https://science4fun.info/wp-content/uploads/2017/05/lion.jpg";
+// }
+
+
+
+// keyboard events
+
+function keyboard()
+{
+    document.getElementById("demo").innerHTML="My name is Brijesh";
+}
+
+
+</script>
+<!-- 
+<body onload="display()">
+<p id="demo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vero mollitia reprehenderit deleniti natus harum ut consequatur, eaque ipsam accusantium illum ad, excepturi, eius saepe rerum nostrum reiciendis tempore error!</p>
+
+</body> -->
+<!-- <body onunload="display()">
+    <p id="demo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vero mollitia reprehenderit deleniti natus harum ut consequatur, eaque ipsam accusantium illum ad, excepturi, eius saepe rerum nostrum reiciendis tempore error!</p>
+</body> -->
+
+
+<!-- <body>
+   
+    <img src="https://media.istockphoto.com/id/877369086/photo/lion-panthera-leo-10-years-old-isolated-on-white.jpg?s=612x612&w=0&k=20&c=J__Jx_BX_FN7iehO965TJtPFYUl0A-bwFgIYaK32R3Y=" id="imgg" style="width:300px; height: auto300px;" onmouseover="display2()" onmouseout="display1()">
+
+
+</body> -->
+
+<!-- <p id="demo"></p>
+<button type="button" onkeypress="keyboard()">Key press >></button> -->
+<!-- 
+
+<p id="demo"></p>
+<button type="button" onclick="keyboard()">Key press >></button> -->
+
+<!-- 
+
+<p id="demo"></p>
+<button type="button" ondblclick="keyboard()">Key press >></button> -->
