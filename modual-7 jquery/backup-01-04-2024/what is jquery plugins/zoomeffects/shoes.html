@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/tiksluslens.css'>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script src="js/tiksluslens.js"></script>
+   
+</head>
+<body>
+<div id="lens3">
+<img src="small_shoe.jpg" data-big-image="big_shoe.jpg" class="tiksluslens" />
+</div>
+<script language="javascript">
+$(document).ready(function(){
+$("#lens3").tiksluslens({lensWidth:150,lensHeight:70});
+});
+</script>
+</body>
+</html>
