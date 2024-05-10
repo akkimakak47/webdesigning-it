@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- online -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- offline cdn -->
+    <!-- <script src="js/jquery.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            $("div").addClass("content");
+            // removed sections
+            $("#btn").click(function(){
+
+                $("#demo").remove();
+            })
+        })
+    </script>
+    <style>
+        .content 
+        {
+            width: 50%;
+            height: auto;
+            margin: auto;
+            background-color: lightgray;
+            padding: 25px;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eum dolore corporis magnam saepe laudantium voluptatum fugit porro repellat facilis similique, dolorem eligendi, reiciendis optio aut eveniet suscipit culpa non?</p>
+
+    </div>
+ <br><br>
+    <center>
+        <button type="button"  id="btn">Delete ?</button>
+         &nbsp;&nbsp;&nbsp;
+        <button type="button">Cancel</button>
+    </center>
+    
+</body>
+</html>
